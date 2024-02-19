@@ -40,6 +40,7 @@
     
     <script>
         // add timezone
+        
         /* variables */
         const apiKey = "ca2b050c1672b5e5969c355d3226d3e5";
         const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&q=";
@@ -58,9 +59,8 @@
             // log data from api call
             console.log(data);
 
-            // change values of classes ??
+            // change values of classes
             document.querySelector(".city").innerHTML = data.name;
-                // round temp
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + " mph";
